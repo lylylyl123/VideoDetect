@@ -106,7 +106,7 @@ class VideoReceiver(host:String, port:Int)
 
       while (tempBuf != null) {
         //logInfo("============recevie data===============")
-        //println("length is "+ buf.length)
+
         if (gopStart == -1) {
           gopStart = findGop(buf, 0)
         }
